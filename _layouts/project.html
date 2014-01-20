@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="bg" style="background-image:url(bg.jpg)"></div>
+<div id="header-wrap">
+  <div id="header">
+    <div class="icon"><a href="/"><img src="/assets/images/icon.png"></a></div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>{{ page.title }}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <h2>Challenge</h2>
+      <p>{{ page.challenge | markdownify }}</p>
+    </div>
+    <div class="large-6 columns">
+      <h2>Solution</h2>
+      <p>{{ page.solution | markdownify }}</p>
+    </div>
+  </div>
+</div>
+<div class="row" id="project-content">
+  <div class="large-12 columns">
+    {{ content }}
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 large-offset-2 columns">
+    {% include projects.html %}
+  </div>
+</div>
