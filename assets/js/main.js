@@ -1,4 +1,3 @@
-/*
 window.onscroll = function(e) {
   h = document.getElementById('header');
   c = document.getElementById('project-content');
@@ -14,4 +13,3 @@ window.onscroll = function(e) {
     h.className = '';
   }
 }
-*/
