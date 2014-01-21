@@ -129,6 +129,12 @@ nav a {
   font-size: 12px;
 }
 
+nav a.active {
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
 nav a.right {
   padding-right: 0px;
 }
