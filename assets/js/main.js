@@ -13,3 +13,16 @@ window.onscroll = function(e) {
     h.className = '';
   }
 }
+
+$(document).foundation("magellan", {threshold: 65});
+
+
+$(document).ready(function() {
+  $('.magellan a').on('click', function(){
+      var elementID = $(this).attr('href').substring(1);
+      var pos = $("[data-magellan-destination="+elementID+"]").offset().top - 65;
+      console.log("scrolling to",pos);
+      $.scrollTo({ endY: pos });
+      return false;
+  });
+});
