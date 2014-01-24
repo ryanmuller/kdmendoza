@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: 'Droid Serif', Georgia, serif;
   font-size: 16px;
   height: 100%;
 }
@@ -275,12 +275,12 @@ li.project-thumb {
 }
 
 #header .magellan a:hover {
-  color: black;
+  //color: black;
 }
 
 
 #header .magellan li.active {
-  background: #666;
+  background: rgba(102, 102, 102, 0.5);
 }
 
 #header .magellan li.active a {
@@ -297,7 +297,7 @@ li.project-thumb {
 }  
 
 #header.sticky {
-  background: #ccc;
+  background: #2a2c39;
 }
 
 #header.sticky.in-header {
@@ -397,10 +397,22 @@ li.project-thumb {
 }
 
 .orbit-bullets li {
-  border: 1px solid black;
+  border: 1px solid #2a2c39;
   background: white;
 }
 
 .orbit-bullets li.active {
-  background: black;
+  background: #2a2c39;
+}
+
+
+
+.full-row-images {
+  width: 100%;
+  list-style-type: none;
+}
+
+.full-row-images.images-4 li {
+  display: inline-block;
+  width: 24%;
 }
