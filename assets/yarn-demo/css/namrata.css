@@ -1,0 +1,407 @@
+/* 
+    Document   : namrata
+    Created on : Nov 20, 2013, 11:58:03 AM
+    Author     : Namrata
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+body {
+        
+        padding-bottom: 40px;
+        background-color: #ffffff;
+      }
+      .sidebar-nav {
+        padding: 3px 0;
+      }
+      
+      
+      .logo{                              
+        margin-left: 28px;
+        top: 5px;
+        position: fixed;                    
+      } 
+      .project_name{                              
+        margin-left: 73px;
+        top: 6px;
+        position: fixed;    
+        color: #fff;
+        font-size: 1.1em;
+      }
+      
+      
+      .fullfirst{
+          
+          margin-left: auto;
+          width: 100%;
+          position: fixed;
+          background-color:#ffffff;
+          top: 0px;
+          height: 50px;
+          z-index: 1;  
+      }
+      
+      
+      #choice{
+          
+                  
+          position:fixed;
+         /* background-image: url('../img/add_button.png');*/
+          background-repeat: no-repeat;
+          margin-left: 13%;
+          margin-top: 0.5%;
+          display:block;
+          /*height:26px;
+          width:36px;*/
+          z-index: 1;
+      }
+      
+      
+    
+      
+      
+      
+      #menu_wrapper {
+          width:100%;
+          position: fixed;
+          top: 33px;
+          z-index: 1600;  
+      }  
+   
+      .first {                    
+          width: 230px;          
+          height: 46px;
+          z-index: 1600;  
+          margin-left: auto;
+          margin-right: auto;        
+          background-image: url(../img/menu_background.png);
+      }
+      
+      .navigation{                    
+          margin-top: 0%;         
+          position:absolute;
+          width:250%;
+          z-index: 1;
+      }
+      #menu_table
+      {
+          height: auto;
+            
+            margin-left: 31px;
+      }
+      
+      #menu_table td
+      {
+          width: 33px;
+          height: 31px;
+          vertical-align: middle;
+          text-align: center;
+          line-height:1.5em;
+      }           
+      
+      #menu_table span
+      {
+          padding-top:1px;
+      }
+      
+      
+      
+      .next{
+          
+          margin-left: 85%;
+          margin-top: -15%;
+      }
+      
+      
+      #contentcontainer{
+          
+          position:relative;
+          width:100%;
+      }
+      
+      
+      
+      #alternative{
+                    
+         display: none;
+         position:relative;
+         
+         /*overflow-y: hidden;*/
+           
+           left:0;
+        /*    width:560px;*/
+         
+           max-height:750px;           
+                 -webkit-transition: all 400ms ;
+-moz-transition: all 300ms ;
+-ms-transition: all 300ms ;
+-o-transition: all 300ms ;
+transition: all 300ms ;
+         
+        
+         
+                  
+      }
+    /*  
+      #dual{
+          
+          
+          background-image: url('../img/alt_button.png');
+          background-repeat:no-repeat;
+          background-position:center;
+          display:block;
+          height:26px;
+          width:36px;
+      }
+      
+      #newsec{
+          
+          margin-left: 5%;
+          margin-top:1%;
+          float:left;
+          background-image: url('../img/add_button.png');
+          background-repeat:no-repeat;
+          background-position:center;
+          display:block;
+          height:26px;
+          width:26px;
+      }
+      
+      
+      #full{
+          
+          margin-left: 1%;
+          margin-top:1%;
+          float:left;
+          background-image: url('../img/fullscreen_button.png');
+          background-repeat:no-repeat;
+          background-position:center;
+          display:block;
+          height:26px;
+          width:26px;
+      }
+      */
+      
+      .choices{
+          
+          
+          margin-left: 30%;
+          margin-top:  7%;
+      }
+      
+      #page{
+          
+          padding-top: 65px;
+          
+      }
+      
+      
+      .hero-unit{
+          
+             
+          
+          float:left;
+          overflow-y: hidden;
+          display: inline-block;
+          
+              
+          -webkit-transition: all 400ms ;
+-moz-transition: all 300ms ;
+-ms-transition: all 300ms ;
+-o-transition: all 300ms ;
+transition: all 300ms ;
+         
+         
+         
+          
+      }
+      
+
+        div.hero-unit:hover {
+            overflow-y: scroll;
+            -webkit-transition: all 700ms ease-in-out;
+            -moz-transition: all 700ms ease-in-out;
+            -ms-transition: all 700ms ease-in-out;
+            -o-transition: all 700ms ease-in-out;
+            transition: all 700ms ease-in-out;
+        }
+
+
+        .borders{
+
+            /*border-left: #eee dotted;
+            border-right:#eee dotted
+            */
+            background-image: url(../img/selected_background.png);
+        }
+
+        #content{
+
+            overflow:hidden;
+            position:relative;
+            background-color: #ffffff;
+            margin-top: 25px;
+        } 
+
+        #content:hover{
+
+            overflow-y:scroll; 
+        }
+
+        .content_alt{
+
+            overflow:visible;
+            margin-left: 27%;
+        }
+
+        .createalt{
+
+             position:relative;
+             padding-left: 30px;
+        }
+
+        .alt{    
+
+        }
+
+        .altsubtitle.subtitle{
+
+            margin-top: 4px;
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+
+        .altsubtitle{
+
+            
+            margin-bottom: 20px;
+            font-weight: lighter;
+        }
+        
+      .contentbox{
+          
+         width:100%;
+       /*  height:810px;*/
+         display: inline-block;
+         overflow-y: hidden;                                                                   
+      }
+      
+      
+      .add_alt{
+          
+          background-image: url('../img/add_alt.png');
+          background-position: center;
+      }
+      
+      .altdot{
+          
+          background: #ff6666;
+           
+      }
+      
+      /*
+      .filldot.altdot:after
+      {
+          box-shadow: 0 0 0 4px rgba(235,111,101,1.0);
+          -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+          -webkit-transform: scale(0.75);
+          -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+          -moz-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transition: transform 0.2s, opacity 0.2s;
+          transform: scale(0.75);
+      }
+      */
+      .contentbox:hover{
+          overflow-y: auto;
+          
+      }      
+                              
+      .alt2 {
+          z-index: 30;
+          position:relative;
+          left:800px;
+          top:-100vh;
+          padding-left: 30px;
+          display:none;
+          padding-top: 2px;
+      }
+
+    .alt1 {
+          
+          position:relative;
+          padding-left: 30px;
+          padding-right: 5px;
+          height: 100vh;
+          display:none;
+      }
+    
+     
+::-webkit-scrollbar { width: 8px; height: 3px;-webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;}
+/*::-webkit-scrollbar-button {  background-color: #e6e7e8; }
+::-webkit-scrollbar-track {  background-color: #ffffff;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}*/
+::-webkit-scrollbar-thumb { height: 50px; background-color: #e6e7e8; border-radius: 3px;-webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;}
+::-webkit-scrollbar-corner { background-color: #999;-webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;}
+::-webkit-resizer { background-color: #666;-webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;}
+
+      
+  /*.slimScrollDiv { border: 1px solid #ccc; margin:10px; } */  
+  
+
+ 
+
+
+ul.navigation
+{
+    list-style-type:none;
+    margin-left:80%;
+    z-index: 80;
+}
+
+ul.navigation li{    
+    display:inline-block;
+}
+
+
+ul.navigation li a{        
+   display: block;
+   background: url('../img/nav-dot.png') no-repeat 0 -12px;
+   text-indent: -9000px;
+   height: 12px;
+   width: 20px;   
+   
+
+}      
+
+
+
+
+
+.active_nav{  
+  display: block;  
+  background: url('../img/nav-dot.png') no-repeat 0 -24px !important;  
+  height:12px;
+}
+

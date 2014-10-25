@@ -195,11 +195,7 @@ li.project-thumb {
   opacity: 0;
   width: 100%;
   border-radius: 10px;
-  background-color: rgba(0,0,0,0.1);
-  background-image: -moz-linear-gradient(top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
-  background-image: -ms-linear-gradient(top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
-  background-image: -o-linear-gradient(top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
+  background-color: rgba(0,0,0,0.3);
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
 }
@@ -226,15 +222,14 @@ li.project-thumb {
   color: white;
   font-size: 16px;
   font-weight: normal;
-  line-height: 1.2em;
-  height: 38px;
   text-transform: none;
+  margin-bottom: 0;
 }
 
 .project-thumb p {
   color: white;
-  line-height: 15px;
-  height: 1em;
+  font-size: 12px;
+  text-transform: capitalize;
 }
 
 .project-thumb:hover h2 {
@@ -275,7 +270,6 @@ li.project-thumb {
 }
 
 #header .magellan a:hover {
-  //color: black;
 }
 
 
@@ -359,6 +353,8 @@ li.project-thumb {
 #header-wrap h2 {
   color: white;
   margin-top: 0;
+  text-align: left;
+  font-size: 15px;
 }
 
 #header-wrap h3 {
@@ -405,7 +401,23 @@ li.project-thumb {
   background: #2a2c39;
 }
 
+.orbit-bullets {
+  text-align: left;
+}
 
+.big-orbit .orbit-bullets {
+  text-align: right;
+  top: 0;
+}
+
+.big-orbit .orbit-bullets li {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+.big-orbit .orbit-slides-container li img {
+  margin: auto;
+}
 
 .full-row-images {
   width: 100%;
@@ -415,4 +427,79 @@ li.project-thumb {
 .full-row-images.images-4 li {
   display: inline-block;
   width: 24%;
+}
+
+.role h2 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.role ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.role li {
+  font-size: 13px;
+  line-height: 14px;
+  margin-bottom: 6px;
+}
+
+.role p {
+  font-size: 13px;
+}
+
+.demo {
+  text-align: center;
+}
+
+.demo .button {
+  background-color: rgb(252, 5, 64);
+  border-radius: 10px;
+}
+
+.demo .fa {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.contact {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.contact .button {
+  width: 180px;
+  background-color: #999;
+  border-radius: 10px;
+}
+
+.contact .button:hover {
+  background-color: #ccc;
+}
+
+.contact .button i {
+  margin-right: 5px;
+}
+
+.video-wrap {
+  text-align: right;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3.special {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.caption {
+  padding-top: 3px;
+  font-size: 14px;
 }

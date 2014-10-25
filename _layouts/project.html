@@ -7,18 +7,19 @@ layout: default
   <div id="header">
     <div class="icon"><a href="/"><img src="/assets/images/icon.png"></a></div>
     <div class="row">
-      <div class="large-6 columns">
+      <div class="large-4 columns">
         <h1>{{ page.title }}</h1>
       </div>
-      <div class="large-6 columns magellan" data-magellan-expedition data-magellan-top-offset="500">
+      <div class="large-8 columns magellan" data-magellan-expedition data-magellan-top-offset="500">
         <ul class="right">
           {% for section in page.sections %}
-          <li data-magellan-arrival="{{ section }}"><a href="#{{ section }}">{{ section }}</a></dd>
+          <li data-magellan-arrival="{{ section | downcase }}"><a href="#{{ section | downcase }}">{{ section }}</a></dd>
           {% endfor %}
         </dl>
       </div>
     </div>
   </div>
+  {% if page.challenge %}
   <div class="row">
     <div class="large-6 columns">
       <h2>Challenge</h2>
@@ -29,6 +30,7 @@ layout: default
       <p>{{ page.solution | markdownify }}</p>
     </div>
   </div>
+  {% endif %}
 </div>
 <div class="row" id="project-content">
   <div class="large-12 columns">
@@ -38,5 +40,17 @@ layout: default
 <div class="row">
   <div class="large-8 large-offset-2 columns">
     {% include projects.html %}
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns contact">
+    <a class="button radius" href="/assets/kristine_mendoza_resume.pdf">
+      <i class="fa fa-arrow-circle-o-down"></i>
+      Resume
+    </a>
+    <a class="button radius" href="mailto:kdmendoza8@gmail.com">
+      <i class="fa fa-envelope"></i>
+      Email
+    </a>
   </div>
 </div>

@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Yarn, by Team Epic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/namrata.css" rel="stylesheet">
+    <link href="css/jquery.qtip.min.css" rel="stylesheet">
+    <link href="css/jquery.mmenu.all.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/component1.css" />
+    	
+
+    <style type="text/css">
+        
+      
+      article[placeholder]:empty:before {
+            content: attr(placeholder);
+            color: #bababa;
+      }
+      header[placeholder]:empty:before {
+            content: attr(placeholder);
+            color: #bababa;
+      }
+      .subtitle[placeholder]:empty:before {
+            content: attr(placeholder);
+            color: #bababa;
+      }
+      
+      .plot_p[placeholder]:empty:before {
+            content: attr(placeholder);            
+      }
+      
+      .subheading[placeholder]:empty:before {
+            content: attr(placeholder);            
+      }
+      
+      #title[placeholder]:empty:before {
+            content: attr(placeholder);            
+      }
+      
+      
+      
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      a {
+          text-decoration: none;
+          color: #fff;
+      }
+      a:hover{
+          text-decoration: none;
+          color: #fff;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>-
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+   
+    
+
+     <script src="js/jquery.min.js"></script>
+         
+   
+  </head>
+
+  <body>    
+      
+ 
+<div class="text-options">
+                        <div class="options">
+                                <span class="no-overflow">
+                                        <span class="lengthen ui-inputs">  
+                                               
+                                                <button class="bold">b</button>
+                                                <button class="italic">i</button>    
+                                                <button class="highlight">H</button>
+                                               
+                                        </span>
+                                </span>
+                        </div>
+                </div>
+ <div id="top_bar">     
+     <div class="logo"><img src="img/yarn_white.png" height="22"/></div>           
+     <div class="project_name" id="title" contenteditable="true" placeholder="The Adventures of Sherlock Holmes"></div>
+     <div id="save_panel"></div>   
+ </div>
+      <div id="logo_menu_wrapper">        
+          <img style="top: 5px; left: 2px;" src="img/triangle_tip.png" />
+          <div id="logo_menu"><div><a href="index.html">Home</a></div><div>Save</div><div>Import</div><div>Exit</div></div>
+      </div>
+ 
+ <div id="blackout"></div>
+ <div id="notes_panel">
+     
+     <div id="notes_search"></div>
+     <div id="notes">
+         <div id="new_note" class="note">
+             +&nbsp;&nbsp;&nbsp;<i>Type new note</i>
+         </div>
+     </div>     
+ </div>
+ 
+ 
+ 
+     <div id="menu_wrapper">
+       <div class="first" id="first">                      
+           <table id="menu_table">
+               <tr>                   
+                   <td><a href="javascript:void(0);" title="Add new section" id ="newsec"><img id="add_button" style="margin-left: 5px;" src="img/add_button.png" /></a></td>
+                   <td><a href="javascript:void(0);" title="Hide thread" id ="full"><img src="img/thread.png" /></a></td>
+                   <td><a href="javascript:void(0);" title="Show alternates" id ="dual"><img src="img/dual.png" /></a></td>
+                   <td><a href="javascript:void(0);" title="Show notes" id ="notes_button"><img src="img/notes.png" /></a></td>
+                   <td><a href="javascript:void(0);" title="Search" id ="search"><img src="img/search.png" style="margin-right: 5px;"/></a></td>
+               </tr>
+           </table>
+      </div>
+     </div>
+     
+      <div class="container-fluid" id="page">
+       
+      
+      <div class="row-fluid">
+        <div class="span3" id="timeline_container">
+           
+          <div class="sidebar-nav row">
+              
+              <!-- <div id='timeline_progress'></div> -->
+            <!--  <div id='timeline_progress'></div>
+              <div id="timeline">                           
+                  <div id="recordsArray_0"><div class="add_float"><span class="add_button">+</span></div><table class="dot_table"id="table_0"><tr><td style="width: 45px; vertical-align: top;" class="alternatives" id="alternative_0"><img class="dot" src="img/empty_dot.png" /><img class="dot" src="img/empty_dot.png" /></td><td class="ontheline" style="vertical-align: top;"><img class="dot" id="dot_0" src="img/dot.png" /></td><td class="last_column_pp"><span class="plot_p" id="plot_p_0">This is ZenPen</span><b style='font-size: 2em' class='alt_button' id='alt_button_0'>&rsaquo;</b><span class='alt_box' id='alt_0'><hr />Alt 1 <hr />Alt 2</span></td></tr></table></div>
+                                
+                <span id="new_section"><strong>+</strong></span>
+               </div> --> 
+            <div id='timeline_progress'></div>
+           
+              
+                  <div>
+              <div id="timeline" class="span2">                           
+                  <div id="recordsArray_0" class="timeline_row"><table class="dot_table" id="table_0">
+                          <tr>
+                              <td class="alternatives_td" style="vertical-align: top; padding-top:2px;"><span id="alt_0_0" class="empty_dot hi-icon"></span></td>                              
+                              <td class="alternatives_td" style="vertical-align: top; padding-top:2px;"><span id="alt_0_1" class="empty_dot hi-icon"></span></td>
+                              <td class="ontheline" style="vertical-align: top;"><span class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a"><a href="javascript:void(0);" id="dot_0" class="hi-icon dot"></a></span></td><td class="last_column_pp"><span class="plot_p" id="plot_p_0" contenteditable="true" placeholder="Type your title"></span><b style='font-size: 1em' class='alt_button' id='alt_button_0'></b><div class="subheading" placeholder="Type brief summary" contenteditable="true" id="sub_0"></div></td>
+                          </tr>
+                      </table></div>
+                  <span id="new_section"><!--<strong>+</strong>--></span>
+               </div>  
+                      <div style="height:100px; width:10px;"></div>
+                  </div>
+                  
+              </div>
+
+            
+            
+              </div>
+        <!--/.well -->
+        <!--/span-->
+     <!--     <div id="contentcontainer">-->
+       
+          <div class="hero-unit span10 offset2" id="online">
+              
+                
+             <section id="section_0" class="section">
+			
+			<header id="header_0" contenteditable="true" class="header default_text" placeholder="Type your title"></header>
+                  
+                        <div id="subtitle_0" placeholder="Type brief summary" class="subtitle default_text" contenteditable="true"></div>
+                        
+                 <article id="art_0" contenteditable="true" placeholder="Type your story" class="content default_text"></article>
+
+		</section>
+                          
+
+          
+         
+	
+          
+        </div>
+       
+        
+        <div id="content">
+            
+            
+            
+			<ul class="navigation">
+				<li><a class="active_nav" id="nav1" href="#">1</a></li>
+				<li><a href="#" id="nav2">2</a></li>
+				</ul>
+		
+        
+        <div id="alternative">
+                        
+           
+              <div id="alt1_0" class="alt1 contentbox contentbox_1">
+                       <section class="alt" id="altsection_0">
+			
+			<header id="altheader_0" contenteditable="true" placeholder="Type your title" class="header"></header>
+                        
+                           <div id="altsubtitle_0" class="subtitle default_text altsubtitle" contenteditable="true" placeholder="Type brief summary"></div>
+            
+               	<article contenteditable="true" class="content" id="article_0" placeholder="Create first alternative"></article>
+
+		</section>
+              </div>
+              
+              <div id="alt2_0" class="alt2 contentbox contentbox_1">
+              <section class="alt" id="altsection_1">
+			
+			<header id="altheader_1" contenteditable="true" class="header" placeholder="Type your title"></header>
+                  <div id="altsubtitle_1" class="subtitle default_text altsubtitle" contenteditable="true" placeholder="Type brief summary"></div>
+                        
+                <!-- <button class="btn btn-default next" onclick="next()">
+   Next
+</button>-->
+               	<article contenteditable="true" class="content" placeholder="Create second alternative"></article>
+		</section>
+              </div>
+     
+            
+              
+             
+            
+            
+            
+            
+              
+
+            </div>
+         
+        </div>
+        <!--/span-->
+        
+     
+   
+      </div><!--/row-->
+         	
+    </div><!--/.fluid-container-->
+
+    
+    
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/rangy-core.js"></script>
+    <script src="js/rangy-cssclassapplier.js"></script>
+    <script src="js/rangy-selectionsaverestore.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.js"></script>	
+    <script src="js/rangy-serializer.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/jquery.selection.js"></script>
+    <script src="js/jstween-1.1.min.js"></script>
+   <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.easing.compatibility.js"></script>
+    <script src="js/jquery.mmenu.min.all.js"></script>
+    <script src="js/component.js"></script>
+    <script src="js/polyfills.js"></script>
+    <script src="js/sherlock.js"></script>  
+    <script src="js/namrata.js"></script>
+    <script src="js/jquery.qtip.min.js"></script>    
+  
+    
+    
+    <script type="text/javascript"> 
+        
+
+        //jumptTo();
+        
+       
+        
+         $(function() {  
+              
+            //flgFull=1;
+            editor.init(); 
+        
+         });
+        function go(id, t){	
+	//animate to the div id.
+        
+        console.log(t);
+	$("#alternative").animate({"left": -($(id).position().left)}, 600);
+	
+	// remove "active" class from all links inside #nav
+    $('ul a').removeClass('active');
+	
+	// add active class to the current link
+    $(t).addClass('active');
+    
+        }
+
+
+
+        </script>
+
+  </body>
+</html>

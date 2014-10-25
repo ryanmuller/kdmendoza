@@ -1,16 +1,16 @@
 <div id="projects">
   <ul class="small-block-grid-1 large-block-grid-3">
   {% for page in site.pages %}
-    {% if page.layout == 'project' %}
+    {% if page.layout == 'project' or page.layout == 'multi' %}
     <li class="project-thumb">
       <a href="/{{ page.dirname }}" class="thumb-wrap"
         style="background-image: url('/{{ page.dirname }}/tile.png')">
         <div class="thumb-inner-wrap">
           <div class="thumb-content-wrap">
             <h2>{{ page.title }}</h2>
+            <p>{{ page.type }}</p>
           </div>
           <div class="thumb-description-wrap">
-            <p>{{ page.tagline }}</p>
           </div>
         </div>
       </a>
